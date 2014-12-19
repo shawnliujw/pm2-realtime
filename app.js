@@ -23,7 +23,7 @@ io.on('connection', function (socket) {
 server.listen(config.port, function () {
     console.log('Express server listening on %d, in %s mode', config.port, app.get('env'));
     var pm2 = require("./lib/PM2");
-    pm2.monitor(3, function (d) {
+    pm2.monitor(3, 20, function (d) {
         console.log(d);
     });
 });
