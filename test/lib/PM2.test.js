@@ -6,7 +6,7 @@ var logger = require("log4js").getLogger("test/lib/PM2.test.js");
 pm2.listProcesses()
     .then(function (info) {
         logger.info(info);
-        pm2.disconnect();
+        pm2.monitor();
     })
     .catch(function (err) {
         logger.error(err);
