@@ -22,20 +22,16 @@ io.on('connection', function (socket) {
 // Start server
 server.listen(config.port, function () {
     console.log('Express server listening on %d, in %s mode', config.port, app.get('env'));
+    var pm2 = require("./lib/PM2");
+    pm2.monitor(3, function (d) {
+        console.log(d);
+    });
 });
 
-var pm2 = require("./lib/PM2");
-pm2.listProcesses()
-    .then(function (info) {
-        logger.info(info);
-        pm2.monitor(3, function (d) {
-            console.log(d);
-        });
-    })
-    .catch(function (err) {
-        logger.error(err);
-        pm2.disconnect();
-    })
+//var pm2 = require("./lib/PM2");
+//        pm2.monitor(3, function (d) {
+//            console.log(d);
+//        });
 
 // Expose app
 exports = module.exports = app;
