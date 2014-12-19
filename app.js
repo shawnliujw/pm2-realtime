@@ -6,6 +6,7 @@ var config = require("config");
 var app = express();
 var logger = require("log4js").getLogger("app.js");
 var server = require('http').createServer(app);
+var PM2 = require("./lib/PM2");
 require('./config/express')(app);
 require('./routes')(app);
 
@@ -19,19 +20,8 @@ io.on('connection', function (socket) {
         logger.info("socket disconnect");
     });
 });
-// Start server
-server.listen(config.port, function () {
-    console.log('Express server listening on %d, in %s mode', config.port, app.get('env'));
-    var pm2 = require("./lib/PM2");
-    pm2.monitor(3, 20, function (d) {
-        console.log(d);
-    });
-});
 
-//var pm2 = require("./lib/PM2");
-//        pm2.monitor(3, function (d) {
-//            console.log(d);
-//        });
-
-// Expose app
+        server.listen(config.port, function () {
+            console.log('Express server listening on %d, in %s mode', config.port, app.get('env'));
+        });
 exports = module.exports = app;

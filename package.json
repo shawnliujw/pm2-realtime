@@ -27,6 +27,7 @@
     "express"
   ],
   "dependencies": {
+    "async": "^0.9.0",
     "bluebird": "^2.4.0",
     "body-parser": "~1.5.0",
     "chalk": "^0.5.1",
@@ -41,6 +42,7 @@
     "log4js": "0.6.12",
     "method-override": "~1.0.0",
     "morgan": "~1.0.0",
+    "request-promise": "^0.3.2",
     "socket.io": "^1.2.1"
   },
   "bugs": {
