@@ -1,61 +1,61 @@
 {
-  "name": "pm2-realtime",
-  "version": "0.0.1",
-  "engines": {
-    "node": ">=0.10"
-  },
-  "author": {
-    "name": "Shawn Liu",
-    "email": "shawn.liu@dotter.me"
-  },
-  "description": "real-time monitor(operate) for PM2",
-  "main": "app.js",
-  "keywords": [
-    "PM2",
-    "monitor",
-    "realtime",
-    "node-pm2",
-    "monitoring",
-    "process manager",
-    "forever-monitor",
-    "sysadmin",
-    "tools",
-    "pm2",
-    "logs",
-    "log",
-    "json",
-    "express"
-  ],
-  "dependencies": {
-    "async": "^0.9.0",
-    "bluebird": "^2.4.0",
-    "body-parser": "~1.5.0",
-    "chalk": "^0.5.1",
-    "composable-middleware": "^0.3.0",
-    "compression": "^1.0.11",
-    "config": "^1.4.0",
-    "cookie-parser": "~1.0.1",
-    "errorhandler": "^1.0.2",
-    "express": "^4.10.6",
-    "express-session": "~1.0.2",
-    "lodash": "~2.4.1",
-    "log4js": "0.6.12",
-    "method-override": "~1.0.0",
-    "morgan": "~1.0.0",
-    "request-promise": "^0.3.2",
-    "socket.io": "^1.2.1"
-  },
-  "bugs": {
-    "url": "https://github.com/shawnLiujianwei/pm2-realtime/issues"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git@github.com:shawnLiujianwei/pm2-realtime.git"
-  },
-  "license": "Apache 2.0",
-  "devDependencies": {
-    "chai": "^1.10.0",
-    "mocha": "^2.0.1",
-    "socket.io-client": "^1.2.1"
-  }
+    "name": "pm2-realtime",
+    "version": "0.0.1",
+    "engines": {
+        "node": ">=0.10"
+    },
+    "description": "real-time monitor(operate) for PM2",
+    "main": "app.js",
+    "keywords": [
+        "PM2",
+        "monitor",
+        "realtime",
+        "node-pm2",
+        "monitoring",
+        "process manager",
+        "forever-monitor",
+        "sysadmin",
+        "tools",
+        "pm2",
+        "logs",
+        "log",
+        "json",
+        "express"
+    ],
+    "dependencies": {
+        "async": "^0.9.0",
+        "bluebird": "^2.4.0",
+        "body-parser": "~1.5.0",
+        "chalk": "^0.5.1",
+        "composable-middleware": "^0.3.0",
+        "compression": "^1.0.11",
+        "config": "^1.4.0",
+        "cookie-parser": "~1.0.1",
+        "errorhandler": "^1.0.2",
+        "express": "^4.10.6",
+        "express-session": "~1.0.2",
+        "lodash": "~2.4.1",
+        "log4js": "0.6.12",
+        "method-override": "~1.0.0",
+        "morgan": "~1.0.0",
+        "request-promise": "^0.3.2",
+        "socket.io": "^1.2.1"
+    },
+    "bugs": {
+        "url": "https://github.com/shawnLiujianwei/pm2-realtime/issues"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git@github.com:shawnLiujianwei/pm2-realtime.git"
+    },
+    "license": "MIT",
+    "devDependencies": {
+        "chai": "^1.10.0",
+        "mocha": "^2.0.1",
+        "socket.io-client": "^1.2.1"
+    },
+    "author": {
+        "name": "Shawn Liu",
+        "email": "shawn.liu@dotter.me"
+    }
 }
